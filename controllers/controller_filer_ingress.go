@@ -22,7 +22,7 @@ func (r *SeaweedReconciler) createAllIngress(m *seaweedv1.Seaweed) *networkingv1
 		},
 		Spec: networkingv1.IngressSpec{
 			// TLS:   ingressSpec.TLS,
-			IngressClass: *m.Spec.IngressClass,
+			IngressClassName: *m.Spec.IngressClass,
 			Rules: []networkingv1.IngressRule{
 				{
 					Host: "filer." + *m.Spec.HostSuffix,
