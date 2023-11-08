@@ -8,6 +8,7 @@ spec:
   image: chrislusf/seaweedfs:latest
   volumeServerDiskCount: 1
   hostSuffix: seaweed.abcdefg.com
+  ingressClass: internal
   master:
     replicas: 3
     volumeSizeLimitMB: 1024

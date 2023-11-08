@@ -101,6 +101,8 @@ type SeaweedSpec struct {
 
 	// Ingresses
 	HostSuffix *string `json:"hostSuffix,omitempty"`
+
+	IngressClass *string `json:"ingressClass,omitempty"`
 }
 
 // SeaweedStatus defines the observed state of Seaweed
